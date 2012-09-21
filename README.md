@@ -1,4 +1,4 @@
 information-managment-framework
 ===============================
 
-Carrymove IMF
+In development stage
