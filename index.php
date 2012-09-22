@@ -1,6 +1,6 @@
 <?php
 
-	include $_SERVER['DOCUMENT_ROOT'] . "/core/app.class/app.class.php";
+	include $_SERVER['DOCUMENT_ROOT'] . "/core/app.class.php";
 	
 	global $cimsApp;
 	$cimsApp = new CIMS_app;
@@ -9,10 +9,6 @@
 	$cimsApp->setVar("GET", $_GET);
 	$cimsApp->setVar("POST", $_POST);
 	global $var;
-	
-	global $cimsUser;
-	$cimsApp->loadClass("user");
-	$cimsUser = new CIMS_user;
 	
 	$fileForLoad = $_SERVER['DOCUMENT_ROOT'] . "/controllers/" . $var['controller'] . ".controller.php";
 	if(file_exists($fileForLoad)) {
