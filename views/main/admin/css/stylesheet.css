@@ -3,18 +3,56 @@ body {
 	background: #F8F8F8;
 	}
 h1 {
-	margin-top: 0px;
 	font-size: 48px;
+	}
+h1, h2 {
+	margin-top: 0px;
 	}
 .page {
 	text-align: left;
-	width: 80%;
+	width: 100% - 20px;
 	padding: 20px;
+	padding-top: 129px;
+	}
+.header {
+	text-align: left;
+	margin: -10px;
+	//margin-left: -10px;
+	position: fixed;
+	width: 100%;
 	background: #FFFFFF;
-	box-shadow: 0px 1px 5px #E0E0E0;
+	box-shadow: 0px 1px 5px #CCCCCC;
+	padding-right: 10px;
+	}
+.userbar {
+	text-align: right;
+	}
+.today {
+	padding-right: 10px;
+	}
+.logout_link:link, .logout_link:visited {
+	color: #00CCFF;
+	font-weight: bold;
+	font-size: large;
+	padding: 5px;
+	padding-left: 30px;
+	padding-right: 10px;
+	border-radius: 5px;
+	background: url('/views/main/admin/images/icons/logout.png') #FFFFFF 8px center no-repeat;
+	margin-left: 10px;
+	}
+.logout_link:hover {
+	color: #FFFFFF;
+	background: url('/views/main/admin/images/icons/logout.png') #00CCFF 8px center no-repeat;
+	}
+.logout_link:active {
+	box-shadow: inset 0px 1px 5px #003333;
 	}
 .tabbar {
+	padding: 20px;
 	padding-bottom: 5px;
+	padding-top: 0px;
+	width: 100%;
 	border-bottom: 1px solid #00CCFF;
 	}
 .menutab {
@@ -38,11 +76,15 @@ h1 {
 	box-shadow: inset 0px 1px 5px #003333;
 	}
 .body {
+	padding: 10px;
+	max-height: 100%;
+	background: #F8F8F8;
+	overflow: auto;
 	margin-bottom: 20px;
+	margin-top: 20px;
 	}
 .footer {
 	padding-top: 5px;
-	border-top: 1px solid #00CCFF;
 	font-size: small;
 	font-style: italic;
 	}

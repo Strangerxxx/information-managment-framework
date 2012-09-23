@@ -1,15 +1,16 @@
-<html>
+п»ї<html>
 	<head>
-		<title>Авторизация | Carrymove IMS</title>
+		<title>РђРІС‚РѕСЂРёР·Р°С†РёСЏ | Carrymove IMS</title>
 		<meta http-equiv="content-type" content="text/html; charset=windows-1251">
 		<link rel="stylesheet" type="text/css" href="/views/main/admin/auth/stylesheet.css">
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<center>
+			<img src="/views/main/admin/images/logo.png" class="auth_logo">
 			<div class="auth_page">
-				<h3>Авторизация</h3>
-				<p>Для получения доступа к&nbsp;Carrymove&nbsp;IMS, пожалуйста, введите свой E-mail и&nbsp;пароль.</p>
+				<h3>РђРІС‚РѕСЂРёР·Р°С†РёСЏ</h3>
+				<p>Р”Р»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РґРѕСЃС‚СѓРїР° Рє&nbsp;Carrymove&nbsp;IMS, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РІРІРµРґРёС‚Рµ СЃРІРѕР№ E-mail Рё&nbsp;РїР°СЂРѕР»СЊ.</p>
 				<?php global $cimsApp; $authError = $cimsApp->getVar("authError"); if($authError !== "null") { ?>
 				<div class="auth_error">
 					<?php global $cimsApp; print $cimsApp->getVar("authError"); ?>
@@ -23,12 +24,12 @@
 							E-mail:
 						</td>
 						<td>
-							<input type="text" name="email" placeholder="напр., ivan@petrov.com">
+							<input type="text" name="email" placeholder="РЅР°РїСЂ., ivan@petrov.com">
 						</td>
 					</tr>
 					<tr>
 						<td>
-							Пароль:
+							РџР°СЂРѕР»СЊ:
 						</td>
 						<td>
 							<input type="password" name="password">
@@ -37,7 +38,7 @@
 					<tr>
 						<td></td>
 						<td>
-							<button type="submit">Войти</button>
+							<button type="submit">Р’РѕР№С‚Рё</button>
 						</td>
 					</tr>
 				</table>

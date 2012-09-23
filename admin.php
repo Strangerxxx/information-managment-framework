@@ -16,13 +16,16 @@
 		case "auth":
 			global $cimsApp;
 			$cimsApp->loadClass("model");
+			global $cimsModel;
 			$cimsModel = new CIMS_model;
 			$cimsModel->m_model_name = "admin";
 			$cimsModel->start();
 			$authResult = authAdmin($post_data['email'], $post_data['password']);
 			switch($authResult) {
 				case true:
+					global $cimsApp;
 					print "<script type=\"text/javascript\">document.location.href = 'admin.php'</script>";
+					$cimsApp->setVar("login", getLoginAdmin());
 					break;
 				case false:
 					global $cimsApp;
