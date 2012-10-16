@@ -5,11 +5,11 @@
 ?>
 				<div class="body">
 					<h2><?=$pageTitle?></h2>
-					<?=$pageBody?>
+					<?include $pageBody?>
 				</div>
 			</div>
 			<div class="footer">
-				<p>2012 &copy; Carrymove IMS 1.0. Разработано в&nbsp;Carrymove Internet Solutions (Россия, Омск).</p>
+				<p>2012 &copy; Carrymove IMS 1.0. Разработано в&nbsp;<a href="http://carrymove.com/ru/">Carrymove Internet Solutions</a></p>
 			</div>
 		</center>
 	</body>

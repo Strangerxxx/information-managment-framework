@@ -24,7 +24,7 @@
 							E-mail:
 						</td>
 						<td>
-							<input type="text" name="email" placeholder="напр., ivan@petrov.com">
+							<input type="text" name="email">
 						</td>
 					</tr>
 					<tr>
@@ -43,7 +43,7 @@
 					</tr>
 				</table>
 			</div>
-			<p>2012 &copy; Carrymove IMS, &copy; Carrymove Internet Solutions</p>
+			<p>2012 &copy; Carrymove IMS, &copy; <a href="http://carrymove.com/ru/">Carrymove Internet Solutions</a></p>
 		</center>
 	</body>
 </html>

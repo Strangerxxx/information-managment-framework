@@ -24,9 +24,13 @@
 					setcookie("auth_cache", "");
 					print "<script type=\"text/javascript\">document.location.href = 'admin.php'</script>";
 					break;
+				case "content":
+					$cimsApp->setVar("adminPageTitle", "Управление контентом");
+					$cimsApp->setVar("adminPageBody", $_SERVER['DOCUMENT_ROOT'] . "/admin/content.php");
+					break;
 				default:
 					$cimsApp->setVar("adminPageTitle", "Главная страница");
-					$cimsApp->setVar("adminPageBody", "Здеся че-то будет.");
+					$cimsApp->setVar("adminPageBody", $_SERVER['DOCUMENT_ROOT'] . "/admin/home.php");
 					break;
 			}
 			$cimsViewHeader->start();
