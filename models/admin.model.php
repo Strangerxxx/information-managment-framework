@@ -5,7 +5,7 @@
 		global $cimsDB;
 		$password = md5($iPassword);
 		$cimsDB->start($cimsApp->getConfig("mysql_db"));
-		$request = "SELECT COUNT() FROM `users` WHERE `email` = '$iEmail' AND `password` = '$password'";
+		$request = "SELECT COUNT(*) FROM `users` WHERE `email` = '$iEmail' AND `password` = '$password'";
 		$reqResult = $cimsDB->request($request);
 		$CountUsers = mysql_fetch_row($reqResult);
 		if($CountUsers>0){
