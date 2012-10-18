@@ -10,8 +10,6 @@
 		$CountUsers = mysql_fetch_row($reqResult);
 		if($CountUsers>0){
 			setcookie("auth_cache", $row['password'], time()+3600);
-			global $cimsApp;
-			global $userLogin;
 			$cimsApp->setVar("login", $row['login']);
 			return true;
 		}
